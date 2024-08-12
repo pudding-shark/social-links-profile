@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+footer { font-size: 11px; text-align: center; }
+footer a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-900);
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    padding:1rem;
+    color:var(--white)
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    background-color: var(--grey-800);
+    padding:16px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    margin:10px;
+}
+
+button {
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 7px 0 7px;
+    background-color: var(--grey-700);
+    color: var(--white);
+    border:transparent;
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--green);
+    color:black
+}
+
+button:focus {
+    outline:solid 3px;
+    outline-offset: 3px;
+    outline-color:var(--white);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top:10px;
+}
+
+.big-weight {
+    font-weight:700;
+}
+
+.mid-weight {
+     font-weight: 600;
+}
+
+.small-weight {
+    font-weight: 400;
+}
+
+.location {
+    color:var(--green);
+    font-size: 0.8rem;
+    margin-top:5px
+}
+
+.bio {
+    font-size: 0.7rem;
+    margin-top:15px;
+    margin-bottom: 12px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 50%;
+    width:4rem;
+    margin-top: 20px;
+}
